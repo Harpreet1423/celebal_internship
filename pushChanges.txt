@@ -1,0 +1,42 @@
+##Setup a remote repository in Local , Add a file and commit or save the changes and push to master branch
+
+#Create a Repository on GitHub
+Go to https://github.com
+Click on New repository
+Give it a name (e.g., git_practice)
+Choose Public or Private
+Do not initialize with README (so you can push from local easily)
+Click Create repository
+Copy the repository URL 
+
+#Initialize Git in Local Directory
+mkdir git_practice
+cd git_practice
+git init
+
+#Add a File
+echo "Hello Git" > hello.txt
+OR create manually using:
+touch hello.txt
+
+#Track and Commit the File
+git add hello.txt
+git commit -m "Added hello.txt file"
+
+#Add Remote Repository
+git remote add origin <git repo url>
+
+#Authenticate with GitHub 
+Since GitHub removed password authentication, you must use a Personal Access Token (PAT):
+Go to https://github.com/settings/tokens
+Click on Generate new token (Classic)
+Give permissions like:
+repo (full control of private repositories)
+Generate token and copy it (only once)
+
+#Push to GitHub
+git push -u origin master
+
+
+
+
