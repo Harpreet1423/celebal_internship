@@ -1,0 +1,17 @@
+##Undo the last commit or remove the last created file from remote repo using CLI
+
+Undo the Last Commit (Locally and Remotely)
+
+Case A: You want to keep the file changes but undo the last commit:
+git reset --soft HEAD
+git push origin branch-name --force
+
+Case B: You want to undo the commit and delete file changes also:
+git reset --hard HEAD
+git push origin branch-name --force
+
+git rm filename.txt
+git commit -m "Removed filename.txt from repository"
+git push origin branch-name
+
+
