@@ -1,0 +1,51 @@
+## Introduction to version control and Git basics, Git installation and configuration, Basic Git commands (init, add, commit, push, pull)
+
+#What is Version Control?
+Version Control is a system that helps manage changes to source code or files over time.
+
+#It allows:
+Tracking changes
+Reverting to previous versions
+Collaborating with others
+
+#Types of Version Control:
+Local Version Control (e.g., RCS)
+Centralized VCS (e.g., SVN)
+Distributed VCS (e.g., Git)
+
+#Git Installation
+sudo apt update
+sudo apt install git
+
+#Git Configuration
+git config --global user.name "Your Name"
+git config --global user.email "yourname@example.com"
+
+#Verify configuration:
+git config --list
+
+#Basic Git Commands
+git init
+git add filename.txt     # Adds a specific file
+git add .                # Adds all files in the folder
+git commit -m "Your commit message"
+git remote add origin https://github.com/username/repo.git
+git push -u origin master   # or main (depends on your repo)
+git pull origin master
+
+#Example Workflow
+
+mkdir MyProject
+cd MyProject
+git init
+touch file.txt
+git add file.txt
+git commit -m "Initial commit"
+git remote add origin https://github.com/yourusername/repo.git
+git push -u origin master
+
+
+
+
+
+
