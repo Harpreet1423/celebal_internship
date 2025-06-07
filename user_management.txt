@@ -1,0 +1,24 @@
+# Linux User & Group Management
+
+## Create group
+sudo groupadd harpreetgroup
+
+## Create user and assign to group
+sudo useradd -m -s /bin/bash -g harpreetgroup harpreetuser
+sudo passwd harpreetuser
+
+## Switch user
+su - harpreetuser
+exit
+
+## Create file and set permissions
+sudo touch /home/harpreetuser/test.txt
+sudo chown harpreetuser:harpreetgroup /home/harpreetuser/test.txt
+sudo chmod 640 /home/harpreetuser/test.txt
+
+## Modify user
+sudo usermod -aG sudo harpreetuser
+
+## Delete user and group
+sudo userdel -r harpreetuser
+sudo groupdel harpreetgroup
