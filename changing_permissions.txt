@@ -1,0 +1,70 @@
+# Create a file, assign permissions (read, write, execute) to different user categories (owner, group, others), and practice changing permissions using chmod.
+
+## Commands used:
+
+# Create file
+  touch myfile.txt
+
+# Check permissions
+  ls -l myfile.txt
+# output
+ -rwxr-xr-- 1 harpreet harpreet 0 Jun  7 11:05 myfile.txt
+    
+# Give all permissions to everyone
+  chmod 777 myfile.txt
+    
+# Check permissions
+  ls -l myfile.txt
+# output
+ -rw--w---- 1 harpreet harpreet 0 Jun  7 11:05 myfile.txt
+    
+#  Remove execute permission from everyone
+  chmod a-x myfile.txt
+    
+# Check permissions
+  ls -l myfile.txt
+# output
+  -rwxrwxrwx 1 harpreet harpreet 0 Jun  7 11:05 myfile.txt  
+    
+# Make file read-only for everyone
+  chmod 444 myfile.txt
+    
+# Check permissions
+  ls -l myfile.txt
+# output
+  -r--r--r-- 1 harpreet harpreet 0 Jun  7 11:05 myfile.txt
+    
+# Owner can do everything, group and others can do nothing
+  chmod 700 myfile.txt
+    
+# Check permissions
+  ls -l myfile.txt
+# output
+  -rwx------ 1 harpreet harpreet 0 Jun  7 11:05 myfile.txt
+    
+# Group can only read, others can only execute, owner has full access
+  chmod 751 myfile.txt
+    
+# Check permissions
+  ls -l myfile.txt
+# output
+  -rwxr-x--x 1 harpreet harpreet 0 Jun  7 11:05 myfile.txt
+    
+# Add execute permission only to owner
+  chmod u+x myfile.txt
+    
+# Check permissions
+  ls -l myfile.txt
+# output
+ -rwxr-x--x 1 harpreet harpreet 0 Jun  7 11:05 myfile.txt
+    
+# Remove write permission from group and others
+  chmod go-w myfile.txt
+   
+# Check permissions
+  ls -l myfile.txt
+# output
+  -rwxr-x--x 1 harpreet harpreet 0 Jun  7 11:05 myfile.txt
+
+
+  
