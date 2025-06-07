@@ -1,0 +1,41 @@
+###Merge types, Create a new branch then commit and push the changes to new branch and merge it with the master branch using pull request.
+
+#Types of Merge in Git
+  Fast-forward merge
+  Happens when master has no new commits; the branch is just "moved forward" to match the new branch.
+  3-way merge
+  Happens when both master and the feature branch have new commits. Git creates a new merge commit.
+  Squash merge
+  Combines all feature branch commits into one single commit before merging to master.
+
+#Rebase merge
+Rewrites history by placing feature commits on top of master, making the history linear.
+
+##Branch, Commit, Push, PR, Merge
+
+#Create a New Branch
+git checkout -b feature-branch
+
+#Make Changes in the Branch
+echo "This is a feature change" > feature.txt
+git add feature.txt
+git commit -m "Added a new feature file"
+
+#Push the Branch to GitHub
+git push -u origin feature-branch
+
+#Create Pull Request (PR) from GitHub
+Go to your repo on GitHub
+
+#You will see a message:
+“Compare & Pull Request” — click it
+Add title & description for your PR
+Select base: master ← merge into
+and compare: feature-branch
+Click on Create Pull Request
+
+#Merge the Pull Request
+Once PR is created, click on Merge Pull Request
+Click Confirm merge
+
+
