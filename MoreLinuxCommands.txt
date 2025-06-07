@@ -1,0 +1,22 @@
+touch names.txt
+touch companies.txt
+vi names.txt
+vi companies.txt
+grep "harpreet" names.txt
+grep "nidh" names.txt
+grep -w "har" names.txt
+grep -w "harpreet" names.txt
+grep "navjot" names.txt
+grep -i "harpreet" names.txt
+grep -n "harpreet" names.txt
+grep -n "harpreet" names.txt
+grep -win "navjot" names.txt
+grep -B 2 "navjot" names.txt
+grep -win "navjot" ./*.txt
+grep -rwin "navjot" .
+grep -win "navjot" .
+grep -wirl "harpreet" .
+grep -wirc "harpreet" .
+history | grep "ls -l"
+grep -P "" names.txt
+cat ~/.
