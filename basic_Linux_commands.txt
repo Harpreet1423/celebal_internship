@@ -1,0 +1,32 @@
+# Execute basic Linux commands (e.g., ls, cd, mkdir, rm, touch) to manipulate files and directories, with an emphasis on understanding their usage.
+
+## List files
+ls – List files and directories
+ls -l     # long listing (permissions, owner, date)
+ls -a     # show hidden files (starting with .)
+ls -la    # both of the above
+
+## Navigate
+cd Documents          # go to Documents
+cd ..                 # go up one level
+cd /home/user/Desktop # go to absolute path
+cd ~                  # go to home directory
+
+## Create directory
+mkdir newfolder
+mkdir -p parent/child/grandchild  # creates nested folders
+
+## Delete file/directory
+rm file.txt               # delete file
+rm -r folder/             # delete folder and contents (recursive)
+rm -rf folder/            # force delete (no confirmation)
+
+## Sample Workflow
+mkdir project
+cd project
+touch  basic_Linux_commands.txt
+ls -l
+cd ..
+rm -r project
+
+
