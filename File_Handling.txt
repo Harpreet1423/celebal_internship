@@ -1,0 +1,25 @@
+# Create directories
+mkdir linux-practice
+cd linux-practice
+mkdir folder1 folder2 folder3
+
+# Create files
+cd folder1
+touch file1.txt file2.txt
+ls
+cd ..
+
+# Move and rename files
+mv folder1/file1.txt folder2/
+mv folder1/file2.txt folder3/renamed_file.txt
+
+# List files in folders
+ls folder1
+ls folder2
+ls folder3
+
+# Navigate
+cd folder2
+pwd
+cd ../folder3
+pwd
